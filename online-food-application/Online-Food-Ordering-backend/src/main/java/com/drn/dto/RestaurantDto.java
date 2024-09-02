@@ -1,17 +1,21 @@
 package com.drn.dto;
 
 import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import java.util.List;
 
 @Data
 @Builder
+@AllArgsConstructor
+@NoArgsConstructor
 @Embeddable
 public class RestaurantDto {
 
-    Long id;
+    private Long id;
 
     private String title;
 

@@ -2,6 +2,9 @@ package com.drn.request;
 
 import com.drn.model.Address;
 import com.drn.model.ContactInformation;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
 import lombok.Builder;
 import lombok.Data;
 
@@ -12,7 +15,6 @@ import java.util.List;
 @Builder
 public class CreateRestaurantRequest {
 
-    private Long id;
     private String name;
     private String description;
     private String cuisineType;

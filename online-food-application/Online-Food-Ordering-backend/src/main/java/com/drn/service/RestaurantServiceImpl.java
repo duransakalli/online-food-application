@@ -127,10 +127,16 @@ public class RestaurantServiceImpl implements RestaurantService {
                 .id(restaurantId)
                 .build();
 
-        if(user.getFavorites().contains(restaurantDto)) {
-            user.getFavorites().remove(restaurantDto);
+        List<RestaurantDto> favorites = user.getFavorites();
+
+        Optional<RestaurantDto> existFavorite = favorites.stream()
+                        .filter(favorite -> favorite.getId().equals(restaurantId))
+                        .findFirst();
+
+        if(existFavorite.isPresent()) {
+            favorites.removeIf(favorite -> favorite.getId().equals(restaurantId));
         } else {
-            user.getFavorites().add(restaurantDto);
+            favorites.add(restaurantDto);
         }
 
         userRepository.save(user);
