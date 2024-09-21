@@ -30,11 +30,11 @@ import java.util.Objects;
 @RequiredArgsConstructor
 public class AuthController {
 
-    private UserRepository userRepository;
-    private PasswordEncoder passwordEncoder;
-    private JwtProvider jwtProvider;
-    private CustomerUserDetailsService customerUserDetailsService;
-    private CartRepository cartRepository;
+    private final UserRepository userRepository;
+    private final PasswordEncoder passwordEncoder;
+    private final JwtProvider jwtProvider;
+    private final CustomerUserDetailsService customerUserDetailsService;
+    private final CartRepository cartRepository;
 
     @Autowired
     public AuthController(UserRepository userRepository,

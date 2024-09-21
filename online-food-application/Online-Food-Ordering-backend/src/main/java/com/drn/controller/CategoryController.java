@@ -15,8 +15,8 @@ import java.util.List;
 @RequestMapping("/api")
 public class CategoryController {
 
-    private CategoryService categoryService;
-    private UserService userService;
+    private final CategoryService categoryService;
+    private final UserService userService;
 
     @Autowired
     public CategoryController(CategoryService categoryService, UserService userService) {

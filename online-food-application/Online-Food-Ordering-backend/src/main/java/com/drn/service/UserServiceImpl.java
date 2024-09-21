@@ -11,8 +11,8 @@ import java.util.Objects;
 @Service
 public class UserServiceImpl implements UserService {
 
-    private UserRepository userRepository;
-    private JwtProvider jwtProvider;
+    private final UserRepository userRepository;
+    private final JwtProvider jwtProvider;
 
     @Autowired
     public UserServiceImpl(UserRepository userRepository, JwtProvider jwtProvider) {

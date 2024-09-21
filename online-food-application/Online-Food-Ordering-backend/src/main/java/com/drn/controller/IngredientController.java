@@ -16,7 +16,7 @@ import java.util.List;
 @RequestMapping("/api/admin/ingredients")
 public class IngredientController {
 
-    private IngredientService ingredientService;
+    private final IngredientService ingredientService;
 
     @Autowired
     public IngredientController(IngredientService ingredientService) {

@@ -20,9 +20,9 @@ import java.util.Optional;
 @Service
 public class RestaurantServiceImpl implements RestaurantService {
 
-    private RestaurantRepository restaurantRepository;
-    private AddressRepository addressRepository;
-    private UserRepository userRepository;
+    private final RestaurantRepository restaurantRepository;
+    private final AddressRepository addressRepository;
+    private final UserRepository userRepository;
 
     @Autowired
     public RestaurantServiceImpl(RestaurantRepository restaurantRepository,
