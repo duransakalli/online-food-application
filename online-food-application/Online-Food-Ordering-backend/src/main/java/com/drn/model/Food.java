@@ -44,7 +44,7 @@ public class Food {
     private boolean isSeasonal;
 
     @ManyToMany
-    private List<IngredientsItem> ingredients = new ArrayList<>();
+    private List<IngredientItem> ingredients = new ArrayList<>();
 
     private Date creationDate;
 

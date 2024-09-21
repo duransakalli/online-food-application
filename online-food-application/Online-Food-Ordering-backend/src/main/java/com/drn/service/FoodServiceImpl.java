@@ -16,7 +16,7 @@ import java.util.stream.Collectors;
 @Service
 public class FoodServiceImpl implements FoodService {
 
-    private FoodRepository foodRepository;
+    private final FoodRepository foodRepository;
 
     @Autowired
     public FoodServiceImpl(FoodRepository foodRepository) {

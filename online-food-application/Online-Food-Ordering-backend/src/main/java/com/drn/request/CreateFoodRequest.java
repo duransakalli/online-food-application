@@ -1,7 +1,7 @@
 package com.drn.request;
 
 import com.drn.model.Category;
-import com.drn.model.IngredientsItem;
+import com.drn.model.IngredientItem;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -23,6 +23,6 @@ public class CreateFoodRequest {
     private Long restaurantId;
     private boolean vegetarian;
     private boolean seasonal;
-    private List<IngredientsItem> ingredients;
+    private List<IngredientItem> ingredients;
 
 }

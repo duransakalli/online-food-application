@@ -12,7 +12,7 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
-public class IngredientsItem {
+public class IngredientItem {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)

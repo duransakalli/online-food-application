@@ -17,9 +17,9 @@ import org.springframework.web.bind.annotation.*;
 @RequestMapping("/api/admin/food")
 public class AdminFoodController {
 
-    private FoodService foodService;
-    private UserService userService;
-    private RestaurantService restaurantService;
+    private final FoodService foodService;
+    private final UserService userService;
+    private final RestaurantService restaurantService;
 
     @Autowired
     public AdminFoodController(FoodService foodService,

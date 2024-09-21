@@ -16,9 +16,9 @@ import java.util.List;
 @RequestMapping("/api/food")
 public class FoodController {
 
-    private FoodService foodService;
-    private UserService userService;
-    private RestaurantService restaurantService;
+    private final FoodService foodService;
+    private final UserService userService;
+    private final RestaurantService restaurantService;
 
     @Autowired
     public FoodController(FoodService foodService,
