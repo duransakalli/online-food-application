@@ -27,7 +27,6 @@ import java.util.Objects;
 
 @RestController
 @RequestMapping("/auth")
-@RequiredArgsConstructor
 public class AuthController {
 
     private final UserRepository userRepository;

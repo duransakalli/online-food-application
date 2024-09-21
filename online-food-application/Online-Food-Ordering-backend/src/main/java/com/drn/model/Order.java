@@ -31,7 +31,8 @@ public class Order {
 
     private Long totalAmount;
 
-    private String orderStatus;
+    @Enumerated(EnumType.STRING)
+    private OrderStatus orderStatus;
 
     private Date createdAt;
 
@@ -45,5 +46,5 @@ public class Order {
 
     private int totalItem;
 
-    private int totalPrice;
+    private Long totalPrice;
 }
